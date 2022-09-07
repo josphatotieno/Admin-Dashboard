@@ -130,3 +130,14 @@ aside li {
     grid-row: 1/ span 2;
 }
 
+#item3 > div:not(:last-child) {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.trending-items > div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
