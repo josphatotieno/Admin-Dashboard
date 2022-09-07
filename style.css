@@ -16,14 +16,19 @@ a {
     color: #fff;
 }
 
+body {
+    display: grid;
+    grid-template-columns: 200px 2fr;
+}
+
 header {
     padding: 20px 40px;
 }
 
 .container1,
 .container2 {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 .container1 {
@@ -50,6 +55,33 @@ i {
 .nav-wrapper ul {
     display: flex;
     gap: 15px;
+}
+
+/* Sidebar */
+aside {
+    padding: 10px 0 10px 10px;
+    background-color: rgb(15, 121, 241);
+    color: #fff;
+}
+
+.sidebar-title,
+.sidebar-navbar > nav > ul:first-child {
+    margin-bottom: 30px;
+}
+
+.sidebar-navbar li {
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.sidebar-navbar > nav > ul > li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+
+aside li {
+    background-color: rgb(15, 121, 241);
 }
 
 /* Projects */
